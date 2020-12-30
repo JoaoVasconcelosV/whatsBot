@@ -7,8 +7,8 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://web.whatsapp.com/')
 time.sleep(30)
 
-contacts = ['João', 'Amor❤️']
-message = 'Testando o bot! My love'
+contacts = ['Contatos'] #Insira os contatos
+message = 'Mensagem que deseja enviar'
 
 def seek_contact(contact):
     research_field = driver.find_element_by_xpath('//div[contains(@class,"copyable-text selectable-text")]')    
